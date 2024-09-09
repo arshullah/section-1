@@ -6,18 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Ticket</title>
 </head>
+<style>
+    body {
+        background-color: wheat;
+        text-align: center;
+        font-size: large;
+    }
 
-<body style="background-color: lightcoral;">
-    <h2 style="color:black ;">Movie Ticket Form </h2>
+    label {
+        font-style: bold;
+        font-weight: bolder;
+    }
 
-    <form>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr10455TxTX2FQEfnTrSxHGn2uYG79bWRw1b_8uKpsOI9SiYTCiOqH1n2Svep_XVNi3T5Pa7ojOGBwzW654EFtZFidIZR6V0-6fE-_sKE" width="200px""  alt="">
-        <img src="https://upload.wikimedia.org/wikipedia/en/0/09/Vedaa.jpg" width="210">
-        <img src="https://m.media-amazon.com/images/M/MV5BMTM3ZGUwYTEtZTI5NS00ZmMyLTk2YmQtMWU4YjlhZTI3NjRjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"width="190"><br><br>
+    .myinput{
+        background-color: red;
+    }
+</style>
+
+<body>
+    <h1 style="color:black ; background-color:magenta">Movie Ticket Form </h1>
+
+    <form action="backend.html" style="background-color: aquamarine;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_uothJzpLHMM6uRWGBXmu-0InAm2Kc6j4eL2oQAjajm_ukQ0I9ivP-5gefh8DI2mxjw&usqp=CAU"
+            width="700"><br><br>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr10455TxTX2FQEfnTrSxHGn2uYG79bWRw1b_8uKpsOI9SiYTCiOqH1n2Svep_XVNi3T5Pa7ojOGBwzW654EFtZFidIZR6V0-6fE-_sKE"
+            width="200px""  alt="">
+        <img src=" https://upload.wikimedia.org/wikipedia/en/0/09/Vedaa.jpg" width="210">
+        <img src="https://m.media-amazon.com/images/M/MV5BMTM3ZGUwYTEtZTI5NS00ZmMyLTk2YmQtMWU4YjlhZTI3NjRjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+            width="190">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5A90xrxAa1KbDcWFGxHD5TZ-3yckzvAvXSw&s"
+            width="167"><br><br>
+        <label for="movie">Select Movie</label>
+        <select name="Movie" id="movie">
+            <option>Stree2</option>
+            <option>Vedaa</option>
+            <option>Kalki</option>
+            <option>Emergency</option>
+        </select><br><br>
+        <label for="type">Movie Type</label>
+        2D <input type="radio" name="x" id="type"> 3D <input type="radio" name="x" id="type"> <br><br>
         <label>Choose Cinema </label>
         <select>
             <option>PVR Sahu</option>
-            <option>Plassio INOX</option>
+            <option>Plasio INOX</option>
             <option>Fun Mall PVR</option>
             <option>Novelty</option>
             <option>Odean</option>
@@ -29,7 +60,7 @@
         <label>Show Time</label>
         <input type="time"><br><br>
         <label>Number Of Ticket</label>
-            <input type="number"><br><br>
+        <input type="number"><br><br>
         <label>Seat Number</label>
         <select>
             <option>a1</option>
@@ -85,16 +116,16 @@
             <option>q3</option>
         </select><br><br>
         <label>Mobile Number </label>
-        <input type="number" minlength="10"><br><br>
+        <input class="myinput" type="number" minlength="10"><br><br>
         <label>Email Address</label>
         <input type="email"><br><br>
         <label> Number of ticket for adults</label>
-        <input type="number" ><br><br>
-        <label >Numer of ticket for children</label>
+        <input type="number"><br><br>
+        <label>Numer of ticket for children</label>
         <input type="number"><br><br>
         <label>Resevation name </label>
         <input type="text" minlength="7"><br><br>
-        <label >Select Food</label>
+        <label>Select Food</label>
         <select>
             <option>Popcorn</option>
             <option>Burger</option>
