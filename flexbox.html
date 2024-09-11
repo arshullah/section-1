@@ -17,11 +17,11 @@
         }
         .parent{
             display: flex;
-            flex-direction: row;
-            /* justify-content:flex-start ; */
+            flex-direction:column;
+            justify-content:space-between;
             height: 100vh;
-            justify-content: space-around;
-            align-items: end;
+            /* justify-content: flex-end; */
+            align-items: flex-end;
 
         }
     </style>
@@ -38,6 +38,11 @@
         <div class="child">
             <h1>3</h1>
         </div>
+    </div>
+    <label> Full Name</label>
+    <div style="display: flex; gap: 10px;">
+        <input type="text" style="width: 100%;">
+        <input type=" text" style="width: 100%;">
     </div>
 
 </body>
