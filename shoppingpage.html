@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Page</title>
+    <style>
+body{
+    background: #f5f7fa;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background-image: url('https://i.pinimg.com/236x/d9/64/45/d964453e9be0e519782868c58be72773.jpg');
+}
+.product-container{
+    background-color: #fff;
+    display: flex;
+    padding: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    background: #fff;
+    width:40%;
+    padding: auto;
+    
+    
+}
+.product-image{
+    min-width:250px;
+    border-radius:10px;
+}
+.product-detail{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.product-ship{
+    background-color: rgb(27, 27, 73);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width:20%;
+}
+h1{
+    font-size:1.5rem;
+    margin: 10px 0;
+}
+.price{
+    display: flex;
+    align-items: center;
+}
+.old-price{
+    text-decoration: line-through;
+    color: #888;
+    margin-top: 10px;
+    margin-bottom: -20px;
+}
+.new-price{
+   font-weight:bolder;
+   font-size: larger;
+}
+.adding-product{
+    background-color: #007bff;
+    padding: 10px;
+    width: 77%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color: #fff;
+    cursor: pointer;
+    
+}
+.stock-manage{
+    margin-bottom: 18px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    
+}
+.white{
+background-color: #f5f7fa;
+border: 1px solid #ccc;
+color: #000;
+border-radius: 5px;
+cursor: pointer;
+margin-bottom: 20px
+}
+.black{background-color: #f5f7fa;
+border: 1px solid #ccc;
+color: #000;
+border-radius: 5px;
+cursor: pointer;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="product-container">
+        <div class="product-image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaVcsj8QQjhJOVjCvjMX2RS1TkPGN41Vf3HA&s" alt="Gaming head phone">
+        </div>
+        <div class="product-detail">
+            <span class="product-ship">Free shipping</span>
+            <h1>RAZER KARKEN KITTY EDIL GAMING HEADSET QUARTZ</h1>
+          <p class="Price">
+              <del class="old-price">₹ 1599,-</del>
+              <span class="new-price">₹799</span>
+            </p>  
+              <p>This offer is vaild until april 3 or as long as stock lasts!</p>
+              <button class="adding-product">Add To Cart</button>
+              <div class="stock-manage">
+<li>50+ pcs.in stock</li>
+              </div>
+<button class="white">❤︎ Add To Whitelist</button>
+<button class="black">𖣂 Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>
